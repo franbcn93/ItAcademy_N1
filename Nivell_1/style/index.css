@@ -177,3 +177,57 @@
     margin-bottom: -10px;
   }
 }
+
+/* Exercici 3 */
+/* Tamaño de cada envuelto dependiendo si es móvil */
+@media screen and (max-width: 600px) {
+  .one {
+    grid-column: 1/4;
+    grid-row: 1;
+    margin: 10px 20px;
+  }
+
+  .two {
+    grid-column: 1/4;
+    grid-row: 2;
+    margin: 0 20px;
+  }
+
+  .three {
+    grid-column: 1/4;
+    grid-row: 3;
+    margin: 10px 20px;
+  }
+
+  .five {
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+  .six {
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+  .eight {
+    grid-column: 1/4;
+    grid-row: 3;
+  }
+  .nine {
+    grid-column: 1/4;
+    grid-row: 4;
+  }
+
+  .seven {
+    grid-column: 1/4;
+    grid-row: 6;
+  }
+  .ten {
+    grid-column: 1/4;
+    grid-row: 5;
+  }
+
+  .seven2,
+  .seven3 {
+    background-color: orange;
+    margin-top: 6px;
+  }
+}
