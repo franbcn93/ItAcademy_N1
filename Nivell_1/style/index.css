@@ -148,3 +148,32 @@
   margin-top: 10px;
   min-height: 20px;
 }
+
+/* Exercici 2 */
+/* Tamaño de cada envuelto dependiendo si es tablet */
+@media screen and (max-width: 900px) {
+  .wrapperContainer2 {
+    background-color: yellow;
+  }
+
+  .seven {
+    border-left: 0;
+    border-top: 12px solid yellow;
+    grid-column: 1/4;
+    grid-row: 4;
+    height: auto;
+  }
+
+  .wrapper3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .five,
+  .six,
+  .eight,
+  .nine {
+    margin-bottom: -10px;
+  }
+}
