@@ -287,6 +287,7 @@ li a i {
   animation: textoMenuAbajo 1.5s ease-out;
 }
 
+/* Exercici 7 */
 /* Responsive para tablet */
 @media screen and (min-width: 900px) {
   .nav li {
