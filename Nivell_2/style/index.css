@@ -227,6 +227,66 @@ li a i {
   padding-top: 8px;
 }
 
+/* Ejercicio 6 */
+@keyframes desdeIzquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes textoTitulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+/* Mover desde arriba los Menus */
+@keyframes textoMenuArriba {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translate(0);
+  }
+}
+
+/* Mover desde abajo los Menus */
+@keyframes textoMenuAbajo {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translate(0);
+  }
+}
+
+/* Animación en el menú */
+.inicio,
+.hoteles,
+.contacto,
+.twitter {
+  animation: textoMenuArriba 1.5s ease-out;
+}
+
+/* Animación en el menú */
+.rutas,
+.vuelos,
+.facebook {
+  animation: textoMenuAbajo 1.5s ease-out;
+}
+
 /* Responsive para tablet */
 @media screen and (min-width: 900px) {
   .nav li {
@@ -240,5 +300,50 @@ li a i {
   .nav li {
     display: inline-block;
     margin-right: 26px;
+  }
+}
+
+/* Exercici 7 */
+/* Responsive para movil */
+/* Parte del ejercicio7 */
+@media screen and (max-width: 900px) {
+  .nav li {
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+  }
+  /* Ocultamos el logo */
+  .logo {
+    display: none;
+  }
+  /* Redes sociales */
+  .facebook,
+  .twitter {
+    padding: 10px 10px;
+  }
+
+  .enjoy {
+    font-size: 30px;
+    top: 50%;
+  }
+}
+
+/* Exercici 7 */
+/* Adaptar la representación del contenido a características del dispositivo */
+@media screen and (max-width: 700px) {
+  /* Grid práctico */
+  .contenedor2 {
+    grid-template-areas: "card1" "card2" "card3" "card4" "something" "textoFinal";
+  }
+  .something {
+    height: auto;
+  }
+  .enjoy {
+    font-size: 22px;
+  }
+  .square {
+    height: 130px;
+    margin-top: -130px;
   }
 }
